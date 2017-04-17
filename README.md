@@ -1,4 +1,7 @@
 # pat-sat-demo
+[![Build Status](https://travis-ci.org/peterszatmary/pat-sat-demo.svg?branch=master)](https://travis-ci.org/peterszatmary/pat-sat-demo)
+
+
 Project about how can product acceptance testing (PAT) and system acceptance testing (SAT) look like.
 
 
@@ -14,7 +17,7 @@ For this testing all sources like ( database, sap, services ... ) are real to te
 
 - Spring Boot like main Java technology for application
 - Cucumber like test tool
-- Maven surefire plugin like plugin that runs selectively our acceptacne tests and any other tests.
+- Maven surefire plugin like plugin that runs selectively our acceptance tests and any other tests.
 - Tests can be run separately. Mainly SAT can take a while thats why is not part of application build process.
 
 
