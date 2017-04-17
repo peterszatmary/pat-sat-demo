@@ -1,7 +1,6 @@
 # pat-sat-demo
 [![Build Status](https://travis-ci.org/peterszatmary/pat-sat-demo.svg?branch=master)](https://travis-ci.org/peterszatmary/pat-sat-demo)
 
-
 Project about how can product acceptance testing (PAT) and system acceptance testing (SAT) look like.
 
 
