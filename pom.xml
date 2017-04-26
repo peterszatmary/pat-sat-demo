@@ -40,6 +40,9 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>${surefire.test.version}</version>
                         <configuration>
+                            <excludes>
+                                <exclude>none</exclude>
+                            </excludes>
                             <includes>
                                 <include>**/pat/*TestEntryPoint.java</include>
                             </includes>
@@ -58,6 +61,9 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>${surefire.test.version}</version>
                         <configuration>
+                            <excludes>
+                                <exclude>none</exclude>
+                            </excludes>
                             <includes>
                                 <include>**/sat/*TestEntryPoint.java</include>
                             </includes>
@@ -126,10 +132,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire.test.version}</version>
-                <configuration>
-                    <includes><!-- run every test except SAT and PAT -->
-                        <include>**/unittest/**Test.java</include>
-                    </includes>
+                <configuration><!-- run every test except SAT and PAT -->
+                    <excludes>
+                        <exclude>**/pat/*TestEntryPoint.java</exclude>
+                        <exclude>**/sat/*TestEntryPoint.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
         </plugins>
