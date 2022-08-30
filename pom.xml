@@ -25,7 +25,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <compiler.plugin.version>3.5.1</compiler.plugin.version>
 
         <h2.test.version>1.4.194</h2.test.version>
-        <junit.test.version>4.12</junit.test.version>
+        <junit.test.version>4.13.1</junit.test.version>
         <surefire.test.version>2.19.1</surefire.test.version>
         <cucumber.test.version>1.2.5</cucumber.test.version>
     </properties>
